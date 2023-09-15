@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>FitFlame | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+  <header class="fix-header">
+    <div>
+      <img src="assets/logo.png" alt="FitFlame" width="50px" height="50px" style="margin-left:10px; float:left">
+      <h1 class="toplogo hidden">Fit-Flame</h1>
+    </div>
+    <img class="menuicon mobile" src="assets/menuicon.png" alt="Menu" width="50px" height="50px">
+    <div class="nav-bar">
+      <div class="nav-links">
+        <img class="xbutton mobile" src="assets/x.png" alt="Menu" width="50px" height="50px" style="z-index: 100;">
+        <ul>
+          <li><a href="index.html" style="cursor: default;" class="active-link">Home</a></li>
+          <li><a href="exercises/exercises.html">Exercises</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Calculators</a>
+            <div class="dropdown-content">
+              <a href="calculators/bmi.html">Calculate BMI</a>
+              <a href="calculators/calories.html">Calculate Daily Calories</a>
+            </div>
+          </li>
+          <li><a href="nutrition/nutrition.html">Nutrition</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#dark" id="dark-button">Go Dark</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <p style="padding:15px; text-align: center; font-size: 32px; font-weight: bold;">Welcome to FitFlame! Your one-stop
+      fitness destination!</p>
+
+    <!-- ======== Start Slider ======== -->
+
+    <div class="slider-cont">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="bac1" checked>
+          <input type="radio" name="radio-btn" id="bac2">
+          <input type="radio" name="radio-btn" id="bac3">
+
+          <div class="slide first">
+            <img src="bac1.jpg" alt="" class="slider-img" draggable="false">
+            <div class="info">
+              <h2>Exercises</h2>
+              <p>Unleash the power of targeted training with our interactive exercise section. Simply click on any
+                muscle group and unlock a dedicated training page designed to strengthen and tone that specific
+                area.<br> From sculpting your abs to building stronger legs, our comprehensive workouts and expert tips
+                will help you shape your body the way you desire.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="bac2.png" alt="" class="slider-img" draggable="false">
+            <div class="info">
+              <h2>Calculators</h2>
+              <p>Maximize your fitness potential with our convenient calculators. Determine your body mass index (BMI)
+                and calculate your ideal daily calorie intake, our interactive tools provide personalized insights
+                tailored to your unique needs. <br>Take control of your fitness journey by tracking your progress and
+                fine-tuning your fitness and nutrition plans for optimal results.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="bac3.jpg" alt="" class="slider-img" draggable="false">
+            <div class="info">
+              <h2>Nutrition</h2>
+              <p>Fuel your workouts with our nutrition expertise. Dive into our nutrition section to explore a wealth of
+                information on healthy eating, meal planning, and dietary tips. Discover how to optimize your nutrition
+                to support your fitness goals, whether it's building lean muscle or boosting your endurance.<br>Empower
+                yourself with the knowledge to nourish your body for peak performance and overall well-being</p>
+            </div>
+          </div>
+        </div>
+        <div class="manual">
+          <label for="bac1" class="manual-btn"></label>
+          <label for="bac2" class="manual-btn"></label>
+          <label for="bac3" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======== End Slider ======== -->
+
+    <div class="clearfix"
+      style="border:1px solid gray; border-radius: 10px; margin:10px; display: flex; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px; order: 2;">
+        <img class="homepic" src="assets/ff.png" alt="FitFlame">
+      </div>
+      <div class="inf" style="flex: 1; order: 1;">
+        <p style="padding:30px; font-size: 3rem; margin:20px; padding-top: 45px; text-align: center;"><q><span
+              style="font-weight: bold; color:#2d81ff;">Unlock</span> Your Potential and <span
+              style="font-weight: bold; color:#2d81ff;">ignite</span> Your Fitness Journey</q></p>
+      </div>
+    </div>
+
+  </main>
+  <footer id="about">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="FitFlame Logo">
+        <h2>Fit-Flame</h2>
+      </div>
+      <div class="footer-links">
+        <a href="https://web.facebook.com/" target="_blank">
+          <img src="assets/face.png" alt="Facebook" width="40px" height="40px"></a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="assets/insta.png" alt="Instagram" width="40px" height="40px"></a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="assets/twitter.png" alt="Twitter" width="40px" height="40px"></a>
+      </div>
+      <div class="footer-description">
+        <p>FitFlame is a fitness website that offers exercise guides for both home and gym workouts. Users can calculate
+          calories and track body fat, along with accessing articles on nutrition and workout tips. FitFlame aims to
+          empower individuals to achieve their fitness goals and improve their overall well-being. Unleash your full
+          fitness potential and conquer your goals with FitFlame's unmatched prowess.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; FitFlame 2023. All rights reserved. | Website created by ZAANOUNE Wadie</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

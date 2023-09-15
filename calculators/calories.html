@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Calculators | Daily Calories</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+
+<body>
+  <header class="fix-header">
+    <div>
+      <a href="../index.html">
+        <img src="../assets/logo.png" alt="FitFlame" width="50px" height="50px" style="margin-left:10px; float:left">
+      </a>
+      <h1 class="toplogo hidden">Fit-Flame</h1>
+    </div>
+
+    <img class="menuicon mobile" src="../assets/menuicon.png" alt="Menu" width="50px" height="50px">
+    <div class="nav-bar">
+      <div class="nav-links">
+        <img class="xbutton mobile" src="../assets/x.png" alt="Menu" width="50px" height="50px" style="z-index: 100;">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../exercises/exercises.html">Exercises</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn active-link">Calculators</a>
+            <div class="dropdown-content">
+              <a href="../calculators/bmi.html">Calculate BMI</a>
+              <a href="../calculators/calories.html">Calculate Daily Calories</a>
+            </div>
+          <li><a href="../nutrition/nutrition.html">Nutrition</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#dark" id="dark-button">Go Dark</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 style="color:#2d81ff; margin:20px 0 0 20px; font-size: 50px;">Daily calories calculator</h1>
+    <div style="padding:15px; font-size: 18px;">
+      <p>BMI stands for "Body Mass Index". It is a numerical value used to classify individuals into different weight
+        categories based on their height and weight. BMI provides a general indication of whether a person has a healthy
+        body weight or is underweight, overweight, or obese.</p><br>
+      <p>Fit-Flame's BMI calculator tool, is designed to help you assess your body mass index and gain valuable insights
+        into your overall health and wellness. BMI provides an indication of your weight status in relation to your
+        height. Enter your height and weight to generate your BMI classification instantly.</p>
+    </div>
+
+    <div class="calculator">
+      <h2>Calorie Intake Calculator</h2>
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <label for="age">Age (years):</label>
+      <input type="number" id="age" min="1" required>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" min="1" required>
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" min="1" required>
+      <label for="activity-level">Activity Level:</label>
+      <select id="activity-level">
+        <option value="sedentary">Sedentary (little to no exercise)</option>
+        <option value="lightly-active">Lightly Active (light exercise/sports 1-3 days/week)</option>
+        <option value="moderately-active">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+        <option value="very-active">Very Active (hard exercise/sports 6-7 days a week)</option>
+        <option value="extra-active">Extra Active (very hard exercise/sports and physical job or 2x training)</option>
+      </select>
+      <button onclick="calculateCalorieIntake()">Calculate</button>
+      <div id="result" class="result-cal"></div>
+    </div>
+    <p style="padding:20px; font-size: 18px;">After determining your daily calorie intake using our calculator, here are
+      a few tips to optimize your fitness journey. Stay consistent with your calorie goals, focusing on nutrient-dense
+      foods for fuel. Maintain a balanced diet, listen to your body's cues, and combine calorie intake with regular
+      physical activity. Every small step counts, so stay motivated and enjoy the journey towards your fitness goals!
+    </p>
+  </main>
+  <footer id="about">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../assets/logo.png" alt="FitFlame Logo">
+        <h2>Fit-Flame</h2>
+      </div>
+      <div class="footer-links">
+        <a href="https://web.facebook.com/" target="_blank">
+          <img src="../assets/face.png" alt="Facebook" width="40px" height="40px"></a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../assets/insta.png" alt="Instagram" width="40px" height="40px"></a>
+        <a href="https://www.twitter.com" target="_blank">
+          <img src="../assets/twitter.png" alt="Twitter" width="40px" height="40px"></a>
+      </div>
+      <div class="footer-description">
+        <p>FitFlame is a fitness website that offers exercise guides for both home and gym workouts. Users can calculate
+          calories and track body fat, along with accessing articles on nutrition and workout tips. FitFlame aims to
+          empower individuals to achieve their fitness goals and improve their overall well-being. Unleash your full
+          fitness potential and conquer your goals with FitFlame's unmatched prowess.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; FitFlame 2023. All rights reserved. | Website created by ZAANOUNE Wadie</p>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>
